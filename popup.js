@@ -16,7 +16,11 @@ function converter(numero) {
 }
 
 document.addEventListener("DOMContentLoaded", function(){
-    document.querySelector('#btn').addEventListener('click', function(){
+    document.querySelector('#btnNFT').addEventListener('click', function(){
+        chrome.tabs.create({url: "https://app.shapeshift.com/#/missions"});
+    });
+
+    document.querySelector('#btnConvert').addEventListener('click', function(){
         let numero = document.querySelector('#numero').value;
         converter(numero);
     });

@@ -1,62 +1,84 @@
+* {
+    border-radius: 10px;
+}
+
 body {
+    background-image: url('https://storage-mercle-prod.s3.amazonaws.com/community/shapeshift/events/foxatar.png');
     background-color: #1D2330;
+    background-size: cover;
+    background-position: center;
     overflow: hidden;
     margin: 0;
     height: 100%;
-    width: 150%;
-    border-radius: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial', sans-serif;
+    color: white;    
+    
 }
 
 #numero {
-    height: 32px;
-    font-size: 16px;
-    background-image: url(images/icon128.png);
-    background-size: 32px;
-    background-position:right;
-    background-repeat: no-repeat;
-    margin-left: 25px;
-    cursor: url('https://www.ilovexv.com.br/dev/wp-content/uploads/2021/05/download-1-1.png');
-}
-
-iframe {
-    overflow: hidden;
-    border-radius: 10%;
+    height: 40px;
+    font-size: 18px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    margin: 20px 0;
+    width: 70%;
+    box-sizing: border-box;
 }
 
 .button {
-    border: black;
+    border: none;
     color: white;
-    padding: 8px 16px;
+    padding: 12px 24px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    transition: background-color .3s ease;
     cursor: pointer;
     background-color: #008CBA;
+    margin-top: 20px;
+}
+
+#btnConvert {
+    align-self: flex-start;
+    margin-left: 15%;
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    50% {opacity: 0.4;}
+    100% {opacity: 1;}
+}
+
+#btnNFT {
+    animation: blink 2s infinite;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .button:hover {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #48d5dd;
 }
 
 .boxed {
     font-size: 20px;
-    color: white;
-    text-decoration-color: black;
-}
-
-.coinPriceBlock-currency select {
-    margin-left: 4px;
-    display: inline-block;
-    border: none;
-    outline: none;
-    background-color: #000000cf;
-    cursor: pointer;
+    padding: 10px;
+    margin-top: 20px;
+    width: 70%;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 h5 {
     color: white;
-    padding-left:25px;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
 }
