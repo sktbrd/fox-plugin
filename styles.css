@@ -1,0 +1,62 @@
+body {
+    background-color: #1D2330;
+    overflow: hidden;
+    margin: 0;
+    height: 100%;
+    width: 150%;
+    border-radius: 10%;
+}
+
+#numero {
+    height: 32px;
+    font-size: 16px;
+    background-image: url(images/icon128.png);
+    background-size: 32px;
+    background-position:right;
+    background-repeat: no-repeat;
+    margin-left: 25px;
+    cursor: url('https://www.ilovexv.com.br/dev/wp-content/uploads/2021/05/download-1-1.png');
+}
+
+iframe {
+    overflow: hidden;
+    border-radius: 10%;
+}
+
+.button {
+    border: black;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #008CBA;
+}
+
+.button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.boxed {
+    font-size: 20px;
+    color: white;
+    text-decoration-color: black;
+}
+
+.coinPriceBlock-currency select {
+    margin-left: 4px;
+    display: inline-block;
+    border: none;
+    outline: none;
+    background-color: #000000cf;
+    cursor: pointer;
+}
+
+h5 {
+    color: white;
+    padding-left:25px;
+}
